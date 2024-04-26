@@ -1,0 +1,26 @@
+{
+  "books": {
+    "The Book": "The Book",
+    "John Doe": "John Doe",
+    "Another Book": "Another Book",
+    "Jane Smith": "Jane Smith",
+    "Awesome Book": "Awesome Book",
+    "Michael Johnson": "Michael Johnson",
+    "Great Book": "Great Book",
+    "Emily Davis": "Emily Davis",
+    "Fantastic Book": "Fantastic Book",
+    "David Lee": "David Lee",
+    "Incredible Book": "Incredible Book",
+    "Sophia Brown": "Sophia Brown",
+    "Robert Williams": "Robert Williams",
+    "Amazing Book": "Amazing Book",
+    "Laura Green": "Laura Green",
+    "Kevin Lee": "Kevin Lee",
+    "Amy Chen": "Amy Chen",
+    "Excellent Book": "Excellent Book"
+  },
+  "menu": {
+    "addBook": "Add Book",
+    "allBooks": "All Books"
+  }
+}

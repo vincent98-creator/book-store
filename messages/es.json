@@ -1,0 +1,29 @@
+{
+    "books": {
+        "The Book": "El Libro",
+        "John Doe": "John Doe",
+        "Another Book": "Otro Libro",
+        "Jane Smith": "Jane Smith",
+        "Awesome Book": "Un Libro Asombroso",
+        "Michael Johnson": "Michael Johnson",
+        "Great Book": "Un Libro Grande",
+        "Emily Davis": "Emily Davis",
+        "Fantastic Book": "Un Libro Fantástico",
+        "David Lee": "David Lee",
+        "Incredible Book": "Un Libro Incredible",
+        "Sophia Brown": "Sophia Brown",
+        "Robert Williams": "Robert Williams",
+        "Amazing Book": "Un Libro Asombroso",
+        "Laura Green": "Laura Green",
+        "Kevin Lee": "Kevin Lee",
+        "Amy Chen": "Amy Chen",
+        "Excellent Book": "Un Libro Excelente",
+        "Wonderful Book": "Libro Maravilloso",
+        "Superb Book":"Libro Excelente"
+
+      },
+  "menu": {
+    "addBook": "Añadir Libro",
+    "allBooks": "Todos los Libros"
+  }
+}
