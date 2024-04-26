@@ -23,8 +23,16 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-
-export default function ProfileForm() {
+import { useTranslations } from "next-intl";
+/**
+ * Book Form component for adding a new book.
+ *
+ * @param {Object} props - Component props.
+ * @param {Function} props.t - Translation function from `next-intl`.
+ * @returns {JSX.Element} - JSX element representing the ProfileForm component.
+ */
+export default function BookForm() {
+  const t = useTranslations("addBook");
   // ...
 
   const formSchema = z.object({
@@ -32,9 +40,11 @@ export default function ProfileForm() {
       message: "Title must be a least 2 characters.",
     }),
     author: z.string().min(2, {
-        message: "Author must be a least 2 characters.",
-      }),
-      price: z.string().min(0,{message: "Price must be have 2 decimal places"}),
+      message: "Author must be a least 2 characters.",
+    }),
+    price: z
+      .string()
+      .min(0, { message: "Price must be have 2 decimal places" }),
   });
 
   // 1. Define your form.
@@ -43,7 +53,7 @@ export default function ProfileForm() {
     defaultValues: {
       title: "",
       author: "",
-      price: ""
+      price: "",
     },
   });
 
@@ -56,10 +66,8 @@ export default function ProfileForm() {
   return (
     <Card className="w-full max-w-sm mx-auto mt-7">
       <CardHeader>
-        <CardTitle className="text-2xl">Add Book</CardTitle>
-        <CardDescription>
-          Enter details below to add a book.
-        </CardDescription>
+        <CardTitle className="text-2xl">{t("AddBook")}</CardTitle>
+        <CardDescription>{t("EnterDetails")}</CardDescription>
       </CardHeader>
 
       <Form {...form}>
@@ -70,55 +78,56 @@ export default function ProfileForm() {
               name="title"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Book Title</FormLabel>
+                  <FormLabel>{t("BookTitle")}</FormLabel>
                   <FormControl>
-                    <Input placeholder="book title" {...field} />
+                    <Input placeholder={t("BookTitlePlaceholder")} {...field} />
                   </FormControl>
-                  <FormDescription>
-                    This is the title of the book.
-                  </FormDescription>
+                  <FormDescription>{t("TitleDescription")}</FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
             />
 
-<FormField
+            <FormField
               control={form.control}
               name="author"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Book Author</FormLabel>
+                  <FormLabel>{t("BookAuthor")}</FormLabel>
                   <FormControl>
-                    <Input placeholder="book author" {...field} />
+                    <Input
+                      placeholder={t("BookAuthorPlaceholder")}
+                      {...field}
+                    />
                   </FormControl>
-                  <FormDescription>
-                    This is the author of the book.
-                  </FormDescription>
+                  <FormDescription>{t("AuthorDescription")}</FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
             />
 
-<FormField
+            <FormField
               control={form.control}
               name="price"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Book Price</FormLabel>
+                  <FormLabel>{t("BookPrice")}</FormLabel>
                   <FormControl>
-                    <Input type="number" placeholder="book price" {...field} />
+                    <Input
+                      type="number"
+                      placeholder={t("BookPricePlaceholder")}
+                      {...field}
+                    />
                   </FormControl>
-                  <FormDescription>
-                    This is the price of the book.
-                  </FormDescription>
+                  <FormDescription>{t("PriceDescription")}</FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
             />
           </CardContent>
-            <CardFooter>
-              <Button type="submit">Submit</Button>
-            </CardFooter>
+          <CardFooter>
+            <Button type="submit">{t("Submit")}</Button>
+          </CardFooter>
         </form>
       </Form>
     </Card>

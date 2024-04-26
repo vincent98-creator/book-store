@@ -1,18 +1,14 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import {  DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuGroup,
-    DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuPortal,
-    DropdownMenuSeparator,
-    DropdownMenuShortcut,
-    DropdownMenuSub,
-    DropdownMenuSubContent,
-    DropdownMenuTrigger,DropdownMenuCheckboxItem
-    } from "@/components/ui/dropdown-menu";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+  DropdownMenuCheckboxItem,
+} from "@/components/ui/dropdown-menu";
 import { type Locale } from "@/lib/locales";
 import { GlobeIcon } from "lucide-react";
 import { useLocale } from "next-intl";

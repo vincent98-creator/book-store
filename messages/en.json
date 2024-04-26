@@ -22,5 +22,19 @@
   "menu": {
     "addBook": "Add Book",
     "allBooks": "All Books"
+  },
+  "addBook": {
+    "AddBook": "Add Book",
+    "EnterDetails": "Enter details below to add a book.",
+    "BookTitle": "Book Title",
+    "BookAuthor": "Book Author",
+    "BookPrice": "Book Price",
+    "BookTitlePlaceholder": "book title",
+    "BookAuthorPlaceholder": "book author",
+    "BookPricePlaceholder": "book price",
+    "TitleDescription": "This is the title of the book.",
+    "AuthorDescription": "This is the author of the book.",
+    "PriceDescription": "This is the price of the book.",
+    "Submit": "Submit"
   }
 }

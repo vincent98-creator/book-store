@@ -25,5 +25,21 @@
   "menu": {
     "addBook": "Añadir Libro",
     "allBooks": "Todos los Libros"
+  },
+
+  "addBook":{
+    "AddBook": "Añadir Libro",
+    "EnterDetails": "Ingrese los detalles a continuación para agregar un libro.",
+    "BookTitle": "Título del Libro",
+    "BookAuthor": "Autor del Libro",
+    "BookPrice": "Precio del Libro",
+    "BookTitlePlaceholder": "título del libro",
+    "BookAuthorPlaceholder": "autor del libro",
+    "BookPricePlaceholder": "precio del libro",
+    "TitleDescription": "Este es el título del libro.",
+    "AuthorDescription": "Este es el autor del libro.",
+    "PriceDescription": "Este es el precio del libro.",
+    "Submit": "Enviar"
   }
+  
 }
